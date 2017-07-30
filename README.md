@@ -1,2 +1,2 @@
 # absolute
-Test for Absolute Web Services
+Test project fo Absolute Web Services
