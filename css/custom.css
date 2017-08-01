@@ -53,6 +53,22 @@
   font-weight: bold;
   font-style: normal;
 }
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.main {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+.footer {
+  flex-shrink: 0;
+}
 input {
   outline: 0!important;
 }
@@ -607,13 +623,11 @@ section.carousel {
 @media (min-width: 992px) {
   .googlemap {
     display: block;
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
   .googlemap {
     display: block;
-    margin-bottom: 300px;
   }
 }
 footer {
@@ -621,13 +635,6 @@ footer {
   padding: 30px 0;
 }
 @media (min-width: 1200px) {
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-  }
 }
 footer .footer-header {
   font-family: 'Roboto-Bold';

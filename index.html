@@ -15,22 +15,38 @@
 
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </a>
-          <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/" alt="absolute web service">
-            <img src="img/logo-mobile.png" title="absolute web service">
-          </a>
-          <a class="navbar-brand hidden-xs col-sm-8 col-md-8 col-lg-8" href="/" alt="absolute web service">
-            <img src="img/logo-desktop.png" title="absolute web service">
-          </a>
-          <a class="search-btn hidden-sm hidden-md hidden-lg">
-            <i class="fa" aria-hidden="true"></i>
-          </a>
-          <div class="search-panel hidden-xs col-sm-4 col-md-4 col-lg-4" style="display:block;">
+    <div class="main">
+      
+      <header>
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+            <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="/" alt="absolute web service">
+              <img src="img/logo-mobile.png" title="absolute web service">
+            </a>
+            <a class="navbar-brand hidden-xs col-sm-8 col-md-8 col-lg-8" href="/" alt="absolute web service">
+              <img src="img/logo-desktop.png" title="absolute web service">
+            </a>
+            <a class="search-btn hidden-sm hidden-md hidden-lg">
+              <i class="fa" aria-hidden="true"></i>
+            </a>
+            <div class="search-panel hidden-xs col-sm-4 col-md-4 col-lg-4" style="display:block;">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="search-panel">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search">
               <span class="input-group-btn">
@@ -38,176 +54,164 @@
               </span>
             </div>
           </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Help & Faq</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-      </div>
-    </header>
+      </nav>
 
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="search-panel">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-btn">
-              <button class="btn btn-primary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </span>
+      <section class="buttons">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Buttons</h2>
+          </div>
+          <div class="button-groups">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
           </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Help & Faq</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      </section>
 
-    <section class="buttons">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2>Buttons</h2>
+      <section class="inputs">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Inputs</h2>
+          </div>
+          <div class="row">
+            <div class="checkboxes col-xs-12 col-sm-4 col-md-4 col-lg-2 col-lg-offset-3">
+              <div>
+                <input type="checkbox" id="checkbox1" checked />
+                <label for="checkbox1">Checkbox Active</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2">Checkbox</label>
+              </div>
+            </div>
+            <div class="radioboxes col-xs-12 col-sm-4 col-md-4 col-lg-2">
+              <div>
+                <input type="radio" id="radio1" name="group1" checked />
+                <label for="radio1">Radio Active</label>
+              </div>
+              <div>
+                <input type="radio" id="radio2" name="group1" />
+                <label for="radio2">Radio</label>
+              </div>
+            </div>
+            <div class="switchboxes col-xs-12 col-sm-4 col-md-4 col-lg-2">
+              <div>
+                <input type="checkbox" id="switcher1" checked />
+                <label for="switcher1">Switcher ON</label>
+              </div>
+              <div>
+                <input type="checkbox" id="switcher2" />
+                <label for="switcher2">Switcher OFF</label>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="button-groups">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-default">Default</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="inputs">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2>Inputs</h2>
-        </div>
-        <div class="row">
-          <div class="checkboxes col-xs-12 col-sm-4 col-md-4 col-lg-2 col-lg-offset-3">
-            <div>
-              <input type="checkbox" id="checkbox1" checked />
-              <label for="checkbox1">Checkbox Active</label>
-            </div>
-            <div>
-              <input type="checkbox" id="checkbox2" />
-              <label for="checkbox2">Checkbox</label>
-            </div>
+      <section class="rating">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Star rating</h2>
           </div>
-          <div class="radioboxes col-xs-12 col-sm-4 col-md-4 col-lg-2">
+          <div class="rating-box">
             <div>
-              <input type="radio" id="radio1" name="group1" checked />
-              <label for="radio1">Radio Active</label>
+              <span class="percenage-rating">
+                <span class="percenage-rating__data" style="width: 64%"></span>
+              </span>
+              <span class="percenage-text">Show rating</span>
             </div>
-            <div>
-              <input type="radio" id="radio2" name="group1" />
-              <label for="radio2">Radio</label>
-            </div>
-          </div>
-          <div class="switchboxes col-xs-12 col-sm-4 col-md-4 col-lg-2">
-            <div>
-              <input type="checkbox" id="switcher1" checked />
-              <label for="switcher1">Switcher ON</label>
-            </div>
-            <div>
-              <input type="checkbox" id="switcher2" />
-              <label for="switcher2">Switcher OFF</label>
+            <div class="checkrating">
+              <span class="stars">
+                <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5/5"></label>
+                <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4/5"></label>
+                <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3/5"></label>
+                <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2/5"></label>
+                <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1/5"></label>
+              </span>
+              <span class="checkrating_text">Check rating</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="rating">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2>Star rating</h2>
-        </div>
-        <div class="rating-box">
-          <div>
-            <span class="percenage-rating">
-              <span class="percenage-rating__data" style="width: 64%"></span>
-            </span>
-            <span class="percenage-text">Show rating</span>
+      <section class="carousel">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2>Carousel</h2>
           </div>
-          <div class="checkrating">
-            <span class="stars">
-              <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5/5"></label>
-              <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4/5"></label>
-              <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3/5"></label>
-              <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2/5"></label>
-              <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1/5"></label>
-            </span>
-            <span class="checkrating_text">Check rating</span>
+          <div class="text-center col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="owl-carousel owl-theme">
+              <div class="item" data-dot="<img src='img/img1.png'>">
+                <div class="item__img">
+                  <img src="img/img1.png">
+                </div>
+                <div class="item__text">
+                  <div class="item__msg">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
+                  <div class="item__name">Chewbacca</div>
+                  <div class="item__date">July 2017</div>
+                </div>
+              </div>
+              <div class="item" data-dot="<img src='img/img2.png'>">
+                <div class="item__img">
+                  <img src="img/img2.png">
+                </div>
+                <div class="item__text">
+                  <div class="item__msg">When I started, I weighed over 2425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
+                  <div class="item__name">Dart Weider</div>
+                  <div class="item__date">July 2017</div>
+                </div>
+              </div>
+              <div class="item" data-dot="<img src='img/img3.png'>">
+                <div class="item__img">
+                  <img src="img/img3.png">
+                </div>
+                <div class="item__text">
+                  <div class="item__msg">When I started, I weighed over 3425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
+                  <div class="item__name">Yoda</div>
+                  <div class="item__date">July 2017</div>
+                </div>
+              </div>
+              <div class="item" data-dot="<img src='img/img4.png'>">
+                <div class="item__img">
+                  <img src="img/img4.png">
+                </div>
+                <div class="item__text">
+                  <div class="item__msg">When I started, I weighed over 4425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
+                  <div class="item__name">R2D2</div>
+                  <div class="item__date">July 2017</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="carousel">
-      <div class="container">
-        <div class="section-header text-center">
-          <h2>Carousel</h2>
-        </div>
-        <div class="text-center col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-          <div class="owl-carousel owl-theme">
-            <div class="item" data-dot="<img src='img/img1.png'>">
-              <div class="item__img">
-                <img src="img/img1.png">
-              </div>
-              <div class="item__text">
-                <div class="item__msg">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
-                <div class="item__name">Chewbacca</div>
-                <div class="item__date">July 2017</div>
-              </div>
-            </div>
-            <div class="item" data-dot="<img src='img/img2.png'>">
-              <div class="item__img">
-                <img src="img/img2.png">
-              </div>
-              <div class="item__text">
-                <div class="item__msg">When I started, I weighed over 2425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
-                <div class="item__name">Dart Weider</div>
-                <div class="item__date">July 2017</div>
-              </div>
-            </div>
-            <div class="item" data-dot="<img src='img/img3.png'>">
-              <div class="item__img">
-                <img src="img/img3.png">
-              </div>
-              <div class="item__text">
-                <div class="item__msg">When I started, I weighed over 3425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
-                <div class="item__name">Yoda</div>
-                <div class="item__date">July 2017</div>
-              </div>
-            </div>
-            <div class="item" data-dot="<img src='img/img4.png'>">
-              <div class="item__img">
-                <img src="img/img4.png">
-              </div>
-              <div class="item__text">
-                <div class="item__msg">When I started, I weighed over 4425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</div>
-                <div class="item__name">R2D2</div>
-                <div class="item__date">July 2017</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="googlemap">
+      <section class="googlemap">
       <div id="map"></div>
     </section>
+
+    </div>
 
     <footer class="footer">
       <div class="container">

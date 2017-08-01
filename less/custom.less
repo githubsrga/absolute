@@ -55,7 +55,24 @@
 @screen-md-max:              (@screen-lg-min - 1);
 
 
-
+// for sticky footer
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.main {
+  flex: 1 0 auto;
+  padding: 20px;
+}
+.footer {
+  flex-shrink: 0;
+}
+// /for sticky footer
 
 
 input {
@@ -477,8 +494,8 @@ section.carousel {
     height: 460px;
   }
   @media (min-width: @screen-sm-min) {}
-  @media (min-width: @screen-md-min) {display: block; margin-bottom: 0;}
-  @media (min-width: @screen-lg-min) {display: block; margin-bottom: 300px;}
+  @media (min-width: @screen-md-min) {display: block;}
+  @media (min-width: @screen-lg-min) {display: block;}
 }
 
 footer {
@@ -487,7 +504,7 @@ footer {
   @media (min-width: @screen-sm-min) {}
   @media (min-width: @screen-md-min) {}
   @media (min-width: @screen-lg-min) {
-    position: fixed; bottom: 0; left: 0; width: 100%; z-index: 2;
+    //position: fixed; bottom: 0; left: 0; width: 100%; z-index: 2;
   }
   .footer-header {
     font-family: @ff-robotobold;
